@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv
+venv
+ENV
+env.bak
+venv.bak
+
+# Docker
+.docker
+postgres_data/
+
+# Environment Variables
+.env
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+
+# Operating System
+Thumbs.db
+db
+Desktop.ini
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+LosslessVolumeHQ
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+*.tfvars
+*.tfvars.json
+
+# SecScan-Hub Specific Temporary Files
+secscan-hub/worker/temp_repos/
+secscan-hub/worker/reports/
+/tmp/
+*.json
+!prometheus.yml
+!*.json.example
+
+# Project planning
+secscan_hub_plan.md
