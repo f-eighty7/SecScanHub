@@ -71,6 +71,9 @@ LosslessVolumeHQ
 *.tfvars
 *.tfvars.json
 
+# Git
+.git
+
 # SecScan-Hub Specific Temporary Files
 secscan-hub/worker/temp_repos/
 secscan-hub/worker/reports/
