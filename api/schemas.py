@@ -15,7 +15,7 @@ class ProjectResponse(ProjectBase):
     created_at: datetime
 
     model_config = {
-    "from_attributes": True
+        "from_attributes": True
     }
 
 class FindingBase(BaseModel):
@@ -32,7 +32,7 @@ class FindingResponse(FindingBase):
     created_at: datetime
 
     model_config = {
-    "from_attributes": True
+        "from_attributes": True
     }
 
 class ScanBase(BaseModel):
@@ -49,5 +49,5 @@ class ScanResponse(ScanBase):
     findings: list[FindingResponse] = []
 
     model_config = {
-    "from_attributes": True
+        "from_attributes": True
     }
