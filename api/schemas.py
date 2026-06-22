@@ -6,6 +6,7 @@ class ProjectBase(BaseModel):
     name: str
     repository_url: str
     discord_webhook_url: str | None = None
+    github_token: str | None = None
 
 class ProjectCreate(ProjectBase):
     webhook_secret: str

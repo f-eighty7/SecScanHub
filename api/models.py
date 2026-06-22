@@ -12,6 +12,7 @@ class Project(Base):
     repository_url: Mapped[str] = mapped_column(String(255), nullable=False)
     webhook_secret: Mapped[str] = mapped_column(String(100), nullable=False)
     discord_webhook_url: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    github_token: Mapped[str | None] = mapped_column(String(255), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, nullable=False, default=lambda: datetime.now(timezone.utc))
     
     #Relationships
