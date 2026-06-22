@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import models
 from database import engine
-from routers import projects, scans
+from routers import projects, scans, webhooks
 
 # Automatically create the database tables if they don't exist yet.
 models.Base.metadata.create_all(bind=engine)
@@ -15,3 +15,4 @@ app = FastAPI(
 # Register routers
 app.include_router(projects.router)
 app.include_router(scans.router)
+app.include_router(webhooks.router)
